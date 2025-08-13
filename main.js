@@ -1,5 +1,5 @@
-import greet, { add, multiply } from './mathUtils.js';
-import { createProfileCard, createSimpleCard } from './modules/cardFactory.js';
+import greet, { add, multiply } from 'mathUtils.js';
+import { createProfileCard, createSimpleCard } from 'cardFactory.js';
 
 const btnCreateCard = document.getElementById('btnCreateCard');
 const btnAddProfile = document.querySelector('#btnAddProfile');
@@ -7,7 +7,7 @@ const btnShowMath   = document.querySelector('#btnShowMath');
 const cardContainer = document.querySelector('#cardContainer');
 const mathOutput    = document.querySelector('#mathOutput');
 
-mathOutput.textContent = greet('Riyaz');
+mathOutput.textContent = greet('SAMSON');
 
 let cardCount = 0;
 btnCreateCard.addEventListener('click', () => {
@@ -33,3 +33,4 @@ btnAddProfile.addEventListener('click', () => {
   const card = createProfileCard({ name: name.trim(), role: role.trim() });
   cardContainer.appendChild(card);
 });
+
